@@ -1,0 +1,20 @@
+server:
+    port: 8080
+
+spring:
+    # profiles:
+    #     active: ${SPRING_PROFILE}
+    webflux:
+        base-path: ${CONTEXT_PATH}
+    application:
+        name : ecs-api-main
+    config:
+        import: optional:file:.env[.properties]
+    r2dbc:
+        url: r2dbc:postgresql://${R2DBC_HOST}:5432/${R2DBC_DB}
+        username: ${R2DBC_USERNAME}
+        password: ${R2DBC_PASSWORD}
+        # pool:
+        #     initialSize : 2
+        #     maxSize : 2
+        

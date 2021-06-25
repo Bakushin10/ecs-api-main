@@ -1,0 +1,8 @@
+build/
+.idea/
+gradle/
+.gradle
+.gitignore
+Dockerfile.componenttest
+docker-compose.yaml
+README.md
