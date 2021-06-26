@@ -75,7 +75,7 @@ task downloadDependencies (type: Exec) {
 
 task buildDockerimage(type: Exec) {
 	workingDir "$projectDir"
-	commandLine 'docker-compose', 'build', 'java-service'
+	commandLine 'docker-compose', 'build', 'api'
 }
 
 task composeUp(type: Exec) {
