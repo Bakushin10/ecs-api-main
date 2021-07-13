@@ -7,7 +7,7 @@ spring:
     webflux:
         base-path: ${CONTEXT_PATH}
     application:
-        name : ecs-api-main
+        name : ecs-project
     config:
         import: optional:file:.env[.properties]
     r2dbc:
@@ -16,5 +16,5 @@ spring:
         password: ${R2DBC_PASSWORD}
         # pool:
         #     initialSize : 2
-        #     maxSize : 2
-        
+        #     maxSize :
+
