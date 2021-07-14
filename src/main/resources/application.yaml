@@ -7,7 +7,7 @@ spring:
     webflux:
         base-path: ${CONTEXT_PATH}
     application:
-        name : ecs-api-main
+        name : ecs-project
     config:
         import: optional:file:.env[.properties]
     r2dbc:
@@ -16,5 +16,21 @@ spring:
         password: ${R2DBC_PASSWORD}
         # pool:
         #     initialSize : 2
-        #     maxSize : 2
-        
+        #     maxSize :
+
+cloud:
+    aws:
+        credentials:
+        # profile-name: s3-file-user
+        region:
+            static: ap-northeast-1
+            auto: false
+        stack:
+            auto: false
+aws:
+    access-key-id: access-id
+    secret-key-id: secret-key
+    s3-bucket: bucket-name
+    s3-object-kms-keyId: object-id
+
+
